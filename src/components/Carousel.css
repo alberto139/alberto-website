@@ -1,0 +1,24 @@
+/* Carousel.css */
+.carousel {
+  position: static;
+  width: 45vw; /* 80% of the viewport width */
+  height: 6em; /* 10% of the viewport height */
+  overflow: clip;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  @apply text-white; /* Set the text color to white using Tailwind @apply directive */
+  @apply text-lg md:text-2xl lg:text-5xl; /* Responsive font sizes */
+  @apply font-mono
+}
+
+.visible {
+  opacity: 1;
+}
