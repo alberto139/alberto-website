@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,9 +12,10 @@ const Navbar = () => {
     <nav className="p-4 relative border-b bg-black">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo or Brand */}
-        <div className={`text-white text-3xl font-bold font-roboto pl-20 `}>
+        <a href="/" className={`text-white text-3xl font-bold font-roboto pl-20 `}>
           AR
-        </div>
+        
+        </a>
 
         {/* Hamburger Menu Button (visible on small screens) */}
         <button
@@ -38,8 +40,8 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className={`lg:flex space-x-4 hidden lg:block`}>
-          <a href="#about" className="text-white hover:text-gray-300 font-medium pr-5">about</a>
-          <a href="#blog" className="text-white hover:text-gray-300 font-medium pr-5">blog</a>
+          <a href="/about" className="text-white hover:text-gray-300 font-medium pr-5">about</a>
+          <a href="https://medium.com/@albertogrivera" className="text-white hover:text-gray-300 font-medium pr-5">blog</a>
           <a href="#rpojects" className="text-white hover:text-gray-300 font-medium pr-5">projects</a>
           <a href="https://scholar.google.com/citations?user=RTvKYusAAAAJ&hl=en" className="text-white hover:text-gray-300 font-medium pr-5">publications</a>
         </div>
@@ -48,7 +50,7 @@ const Navbar = () => {
     {isMenuOpen && (
     <div className="lg:hidden absolute top-full right-0 bg-black z-10 w-1/4 border-l border-b border-r border-white font-roboto">
         <a href="#about" className="block py-2 px-4 text-white hover:text-gray-300 font-medium">about</a>
-        <a href="#blog" className="block py-2 px-4 text-white hover:text-gray-300 font-medium">blog</a>
+        <a href="https://medium.com/@albertogrivera" className="block py-2 px-4 text-white hover:text-gray-300 font-medium">blog</a>
         <a href="#projects" className="block py-2 px-4 text-white hover:text-gray-300 font-medium">projects</a>
         <a href="https://scholar.google.com/citations?user=RTvKYusAAAAJ&hl=en" className="block py-2 px-4 text-white hover:text-gray-300 font-medium">publications</a>
     </div>
