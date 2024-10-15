@@ -15,6 +15,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 // import Contact component
 import Contact from "./pages/Contact";
+
+import Article01 from './pages/article01'; // Import your article page
  
 function App() {
     return (
@@ -55,6 +57,8 @@ function App() {
                         path="*"
                         element={<Navigate to="/" />}
                     />
+
+                    <Route path="/article01" element={<Article01 />} /> {/* Your new article route */}
                 </Routes>
             </Router>
         </>

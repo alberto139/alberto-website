@@ -55,7 +55,8 @@ const About = () => {
 
       <p class="mb-4">
         Let's Connect
-        Feel free to connect with me on <a href="Your LinkedIn Profile" class="text-blue-400">LinkedIn</a>.
+        <br></br>
+        Feel free to connect with me on <a href="https://www.linkedin.com/in/albertogrivera/" class="text-blue-400">LinkedIn</a>.
       </p>
 
       <p>Happy coding!</p>
