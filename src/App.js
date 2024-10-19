@@ -17,12 +17,15 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 import Article01 from './pages/article01'; // Import your article page
+
+import ScrollToTop from './components/ScrollToTop';
  
 function App() {
     return (
         <>
             {/* This is the alias of BrowserRouter i.e. Router */}
             <Router>
+                <ScrollToTop />
                 <Routes>
                     {/* This route is for home component 
           with exact path "/", in component props 
