@@ -4,10 +4,15 @@ import backgroundImg from '../imgs/sun.png';
 import steering from '../imgs/steering.gif';
 import Navbar from "../components/Navbar";
 import Carousel from '../components/Carousel';
+import { Link } from 'react-router-dom';
+
 
 function Home(props) {
   return (
     <div className="min-h-screen min-w-screen bg-[#003366] relative overflow-hidden">
+      
+      {/* Background Grid */}
+      <div className="grid-background"></div>
       
       {/* Background Image */}
       <img
@@ -35,14 +40,15 @@ function Home(props) {
                 <Carousel />
               </div>
               {/* Tag Line */}
-              <div className="text-white lg:text-3xl md:text-3xl p-2 z-20 font-montserrat" style={{ fontWeight: 500 }}>
+              <div className="text-white lg:text-3xl md:text-3xl p-2 z-20 font-montserrat" style={{ fontWeight: 400 }}>
                 Solving real problems with Computer Vision <br />
                 and Deep Learning
               </div>
             </div>
           </div>
           {/* Profile Image */}
-          <div className="flex flex-col items-stretch w-[55%] max-md:w-full max-md:ml-0 ml-auto">
+          <div className="flex flex-col items-stretch w-[55%] max-md:w-full max-md:ml-0 ml-auto z-20">
+
             <img
               src={profile}
               className="h-50"
@@ -60,7 +66,7 @@ function Home(props) {
         </div>
 
         {/* Blog Content Container */}
-        <div className="border border-solid border-[#5a8bbf] transition-bg hover:bg-[#629dd1] hover:border-[#629dd1] relative overflow-hidden self-stretch flex min-h-[256px] w-[90%] justify-center items-center mt-16 px-16 py-8 max-md:max-w-full max-md:mt-10 max-md:px-5">
+        <Link to="/article01" className="border border-solid border-[#5a8bbf] transition-bg hover:bg-[#629dd1] hover:border-[#629dd1] relative overflow-hidden self-stretch flex min-h-[256px] w-[90%] justify-center items-center mt-16 px-16 py-8 max-md:max-w-full max-md:mt-10 max-md:px-5">
           {/* Blog Content Wrapper */}
           <div className="max-w-[1025px] max-md:max-w-full flex">
             {/* Blog Image */}
@@ -82,7 +88,9 @@ function Home(props) {
               </div>
             </div>
           </div>
-        </div>
+
+          
+          </Link>
       </div>
     </div>
   );
