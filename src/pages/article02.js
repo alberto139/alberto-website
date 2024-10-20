@@ -22,7 +22,7 @@ function Article02() {
     {/* Title Card */}
     <div className="mb-8">
         <h1 className="text-4xl font-bold">DIY Lane Keeping</h1>
-        <h3 className="text-2xl font-medium text-gray-500">Making a lane keeping system with deep learning</h3>
+        <h3 className="text-2xl font-medium text-gray-500">Making a lane keeping system with deep learning.</h3>
         <p className="text-sm text-gray-500">By Alberto Rivera | Nov 14, 2019</p>
     </div>
 
