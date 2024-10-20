@@ -17,6 +17,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 import Article01 from './pages/article01'; // Import your article page
+import Article02 from './pages/article02'; // Import your article page
 
 import ScrollToTop from './components/ScrollToTop';
  
@@ -61,7 +62,7 @@ function App() {
                         element={<Navigate to="/" />}
                     />
 
-                    <Route path="/article01" element={<Article01 />} /> {/* Your new article route */}
+                    <Route path="/article02" element={<Article02 />} /> {/* Your new article route */}
                 </Routes>
             </Router>
         </>

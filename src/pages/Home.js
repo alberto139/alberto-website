@@ -68,7 +68,7 @@ function Home(props) {
         </div>
 
         {/* Blog Content Container */}
-        <Link to="/article01" className="border border-solid border-[#cfddee] transition-bg hover:bg-[#629dd1] hover:border-[#629dd1] relative overflow-hidden self-stretch flex min-h-[256px] w-[90%] justify-center items-center mt-16 px-16 py-8 max-md:max-w-full max-md:mt-10 max-md:px-5">
+        <Link to="/article02" className="border border-solid border-[#cfddee] transition-bg hover:bg-[#629dd1] hover:border-[#629dd1] relative overflow-hidden self-stretch flex min-h-[256px] w-[90%] justify-center items-center mt-16 px-16 py-8 max-md:max-w-full max-md:mt-10 max-md:px-5">
           {/* Blog Content Wrapper */}
           <div className="max-w-[1025px] max-md:max-w-full flex">
             {/* Blog Image */}
