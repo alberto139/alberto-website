@@ -12,7 +12,7 @@ import {
 // import Home component
 import Home from "./pages/Home";
 // import About component
-import About from "./pages/About";
+import About from "./pages/about";
 // import Contact component
 import Contact from "./pages/Contact";
 
