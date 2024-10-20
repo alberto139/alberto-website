@@ -3,10 +3,14 @@ import React from 'react';
 import Navbar from "../components/Navbar";
 
 
+
 const About = () => {
   return (
 
-    <div className="min-h-screen min-w-screen bg-black">
+    <div className="min-h-screen min-w-screen bg-[#003366] relative overflow-hidden">
+      
+    {/* Background Grid */}
+    <div className="grid-background"></div>
 
     <Navbar></Navbar> 
 

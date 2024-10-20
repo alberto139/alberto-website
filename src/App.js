@@ -16,7 +16,6 @@ import About from "./pages/about";
 // import Contact component
 import Contact from "./pages/Contact";
 
-import Article01 from './pages/article01'; // Import your article page
 import Article02 from './pages/article02'; // Import your article page
 
 import ScrollToTop from './components/ScrollToTop';
